@@ -1,0 +1,26 @@
+{
+  "name": "str8",
+  "version": "1.0.0",
+  "description": "Simple string manipulation library",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover jasmine-node spec"
+  },
+  "repository": {
+    "url": "git+https://github.com/toubou91/str8.git",
+    "type": "git"
+  },
+  "keywords": [
+    "string"
+  ],
+  "author": "Thodoris Bais",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toubou91/str8/issues"
+  },
+  "homepage": "https://github.com/toubou91/str8#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine-node": "^1.14.5"
+  }
+}
