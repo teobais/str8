@@ -6,8 +6,8 @@
 // load the module
 var str8 = require('str8.js');
 
-// ask for a number's ceil
-str8.firstHalf("test");
+// ask for the first half of a string
+var half = str8.firstHalf("test"); // half = "te";
 ```
 
 ## Test
