@@ -20,6 +20,15 @@ describe('#str8.js', function() {
         }); 
     });
     
+    describe("Testing prune function", function () {
+        it('test should return es', function() {
+            expect(str8.prune("test")).toEqual("es");
+        }); 
+        it('a', function() {
+            expect(str8.prune("a")).toEqual("");
+        }); 
+    });
+    
 });
 
    
