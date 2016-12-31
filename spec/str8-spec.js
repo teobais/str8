@@ -29,6 +29,12 @@ describe('#str8.js', function() {
         }); 
     });
     
+    describe("Testing capitelizeFirst function", function () {
+        it('test should return Test', function() {
+            expect(str8.capitalizeFirst("test")).toEqual("Test");
+        }); 
+    });
+    
 });
 
    

@@ -10,6 +10,10 @@ module.exports = {
     
     prune: function(str) {
         return str.length > 1 ? str.substring(1, str.length-1) : "" ;
+    },
+    
+    capitalizeFirst: function(str) {
+        return str.charAt(0).toUpperCase() + str.slice(1);
     }
 
 }
