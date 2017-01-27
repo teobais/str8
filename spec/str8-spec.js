@@ -35,6 +35,15 @@ describe('#str8.js', function() {
         }); 
     });
     
+    describe("Testing isValidURL function", function () {
+        it('valid url', function() {
+            expect(str8.isValidURL("http://thodorisbais.com")).toBe(true);
+        }); 
+        it('invalid url', function() {
+            expect(str8.isValidURL("toubou")).toBe(false);
+        }); 
+    });
+    
 });
 
    
