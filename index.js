@@ -19,6 +19,21 @@ module.exports = {
     isValidURL: function(url)
     {
         return new RegExp("^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?").test(url);
+    },
+
+    quickHash: function(input)
+    {
+        var hash = 0;
+        if (input.length === 0) return '';
+
+        var chr;
+        for (var i = 0; i < input.length; i++)
+        {
+            chr   = input.charCodeAt(i);
+            hash  = ((hash << 5) - hash) + chr;
+            hash |= 0; // Convert to 32-bit integer.
+        }
+        return hash + ''; // Ensure a String is returned.
     }
 
 }

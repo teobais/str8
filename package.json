@@ -1,6 +1,6 @@
 {
   "name": "str8",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple string manipulation library",
   "main": "index.js",
   "scripts": {

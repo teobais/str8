@@ -43,6 +43,13 @@ describe('#str8.js', function() {
             expect(str8.isValidURL("toubou")).toBe(false);
         }); 
     });
+
+    describe("Testing quichHash function", function () {
+        it('valid hash', function() {
+            expect(str8.quickHash('')).toEqual('');
+            expect(str8.quickHash('test')).toBeDefined();
+        });
+    });
     
 });
 
